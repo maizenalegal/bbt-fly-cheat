@@ -62,7 +62,7 @@ int __stdcall DllMain(
     if (reason == 1) {
         DisableThreadLibraryCalls(instance);
 
-        MessageBoxA(NULL, "Injected! Press end key to toggle and space to fly.", "Fly", MB_OK);
+        MessageBoxA(NULL, "Injected! Press end key to stop and space to fly.", "Fly", MB_OK);
 
         // execute the fly cheat
         const auto thread = CreateThread(
